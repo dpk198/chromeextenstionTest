@@ -1,0 +1,22 @@
+How to override a Bootstrap css
+
+There are priority points for selectors
+
+100 points for IDs.
+10 points for Class.
+
+1 point for tag selector or pseudo-elements.
+
+Example:
+
+.test {//in bootstrap priority score is 10
+    padding-top: 15px; //want to override to make 10px;
+    padding-bottom:10px
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#test {// priority score is 100
+
+    padding-top: 10px; //override is successfull
+}
+
