@@ -1,0 +1,20 @@
+var url = window.location.href;
+
+$.urlParam = function(name){
+	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(url);
+	return results[1] || 0;
+}
+
+//get location parameter
+var location = $.urlParam(location);
+
+switch (location) {
+    case "location1":
+        //set proper info
+       
+        break; 
+    
+    default: 
+        //set default properties
+        
+}
